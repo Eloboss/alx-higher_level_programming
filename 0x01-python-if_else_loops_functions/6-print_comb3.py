@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for e in range(0, 10):
+for e in range(0, 9):
     for p in range(0, 10):
         if (e == 8):
                 print("{}{}".format(e, p))
