@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-i = 0
-for e in range(122, 96, -1):
-    print("{}".format(chr(e)), end="")
-    i = 32 if i == 0 else 0
+for e in range(122, 96, -2):
+    print("{:c}{:s}".format(c, chr(c - 33)), end="")
