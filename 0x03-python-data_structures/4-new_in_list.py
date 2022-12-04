@@ -2,8 +2,8 @@
 def new_in_list(my_list, idx, element):
     i = my_list.copy()
     elo = len(i)
-    boss = i.insert(idx, element)
-    if idx< 0 or idx > eli:
+    if idx< 0 or idx > elo:
         return i
     else:
-        return boss
+        my_list[idx] = element
+        return my_list
