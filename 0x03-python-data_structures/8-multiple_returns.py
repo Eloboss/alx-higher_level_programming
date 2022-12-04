@@ -2,5 +2,8 @@
 def multiple_returns(sentence):
     boss = len(sentence)
     i = 0
-    elo = boss, sentence[i]
-    return elo
+    if boss == 0:
+        return (boss, None)
+    else:
+        elo = boss, sentence[i]
+        return elo
