@@ -5,5 +5,5 @@ def new_in_list(my_list, idx, element):
     if idx < 0 or idx > elo - 1:
         return i
     else:
-        my_list[idx] = element
-        return my_list
+        i[idx] = element
+        return i
