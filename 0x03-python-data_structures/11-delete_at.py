@@ -1,7 +1,7 @@
-#!/usr\bin/python3
+#!/usr/bin/python3
 def delete_at(my_list=[], idx=0):
-    boss = len(my_list)
-    if idx < 0 or idx > boss - 1:
+    elo = len(my_list)
+    if idx < 0 or idx > elo - 1:
         return my_list
     else:
         del my_list[idx]
