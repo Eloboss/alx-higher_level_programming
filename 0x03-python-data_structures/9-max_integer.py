@@ -5,7 +5,7 @@ def max_integer(my_list=[]):
         return None
     else:
         elo = my_list[0]
-        for elo in range(boss):
-            if my_list[boss] > elo:
-                elo = my_list[boss]
+        for i in range(boss):
+            if my_list[i] > elo:
+                elo = my_list[i]
         return elo
