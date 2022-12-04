@@ -6,7 +6,6 @@ def max_integer(my_list=[]):
     Max = my_list[0]
     for elo in my_list:
         if elo > Max:
+            Max = elo
             return elo
-        else:
-            return Max
-
+    return Max
