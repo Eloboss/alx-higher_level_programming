@@ -4,4 +4,4 @@ def complex_delete(a_dictionary, value):
     for boss in elo:
         if a_dictionary.get(boss) == value:
             del a_dictionary[boss]
-            return a_dictionary
+    return a_dictionary
