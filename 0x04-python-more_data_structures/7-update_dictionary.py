@@ -6,4 +6,4 @@ def update_dictionary(a_dictionary, key, value):
         for elo in a_dictionary:
             if elo == key:
                 a_dictionary[elo] = value
-                return a_dictionary
+    return a_dictionary
