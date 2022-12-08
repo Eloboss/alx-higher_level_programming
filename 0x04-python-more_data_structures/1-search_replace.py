@@ -5,7 +5,6 @@ def search_replace(my_list, search, replace):
     for elo in range(boss):
         if my_list[elo] == search:
             pen.append(replace)
-            return pen
         else:
             pen.append(my_list[elo])
-            return pen
+    return pen
