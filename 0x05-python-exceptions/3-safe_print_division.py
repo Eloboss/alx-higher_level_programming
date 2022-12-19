@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     try:
-        int(a / b)
-        sum = int(a / b)
-    except ZeroError:
+        sum = (a / b)
+    except (ZeroDivisionError, TypeError):
         sum = None
     finally:
         print("{}".format(sum))
+    return (sum)
