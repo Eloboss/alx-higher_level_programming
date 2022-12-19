@@ -5,5 +5,5 @@ def safe_print_division(a, b):
     except (ZeroDivisionError, TypeError):
         sum = None
     finally:
-        print("{}".format(sum))
+        print("Inside result: {}".format(sum))
     return (sum)
