@@ -10,14 +10,15 @@ class Square:
             size: length of a square
         """
         self.size = size
+
     @property
     def size(self):
-    """To retrieve d size."""
+        """To retrieve d size."""
         return self.__size
 
     @size.setter
     def size(self, value):
-    """To set d attributes"""
+        """To set d attributes"""
         if type(value) is not int:
             raise TypeError("size must be an integer")
 
