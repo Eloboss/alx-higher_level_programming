@@ -5,8 +5,10 @@
 class Square:
     """Represent a Square."""
     def __init___(self, size=0):
-        """square attributes"""
-        self.__size = size
+        """square attributes
+        args:
+            size: length of square
+        """
         if type(size) is not int:
             raise TypeError('size must be an integer')
         elif size < 0:
