@@ -4,6 +4,9 @@
 
 class Square:
     """Define asquare."""
-    def __init__(self, __size):
-        """Square with attrubutes."""
+    def __init__(self, size):
+        """Square with attrubutes
+        Args:
+            size: length of d square
+        """
         self.__size = size
