@@ -61,4 +61,4 @@ class Square:
             string = '#' * self.__size
             margin = ' ' * self.__position[0]
             for x in range(self.__size):
-                print(margin, string, sep="")
+                print(margin, string, end="")
