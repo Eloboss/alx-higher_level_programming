@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a square."""
 
+
 class Square:
     """Represent a square."""
     def __init__(self, size=0, position=(0, 0)):
@@ -16,6 +17,7 @@ class Square:
     def size(self):
         """To retrieve d size."""
         return self.__size
+
     @size.setter
     def size(self, value):
         """To set d size
@@ -34,16 +36,17 @@ class Square:
     def position(self):
         """To retrieve d position."""
         return self.__position
+
     @position.setter
     def position(self, value):
         """To set d position
         args:
-            value: size of d square   
+            value: size of d square
         """
         if type(value) is not tuple or len(value) != 2\
            or type(value[0]) is not int or type(value[1]) is not int\
            or value[0] < 0 or value[1] < 0:
-               raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
