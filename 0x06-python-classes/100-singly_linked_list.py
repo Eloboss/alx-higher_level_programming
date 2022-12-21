@@ -23,7 +23,7 @@ class Node:
         """"To set the data."""
         if type(value) is not int:
             raise TypeError("data must be an integer")
-        self.__next_node = value
+        self.__data = value
 
     @property
     def next_node(self):
@@ -42,7 +42,7 @@ class SinglyLinkedList:
     """singly linked class."""
     def __init__(self):
         """initializes self."""
-        self.__head = 0
+        self.__head = None
 
     def sorted_insert(self, value):
         """Inserts a new node in correct position
