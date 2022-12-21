@@ -50,7 +50,7 @@ class Square:
         self.__position = value
 
     def area(self):
-        " ""Returns area of square."""
+        """Returns area of square."""
         return self.__size * self.__size
 
     def my_print(self):
@@ -61,4 +61,4 @@ class Square:
             string = '#' * self.__size
             margin = ' ' * self.__position[0]
             for x in range(self.__size):
-                print(margin, string, end="")
+                print(margin, string, sep="")
