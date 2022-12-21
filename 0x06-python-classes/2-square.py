@@ -4,10 +4,10 @@
 
 class Square:
     """Represent a Square."""
-    def __init___(self, size=0):
+    def __init__(self, size=0):
         """square attributes
         args:
-            size: length of square
+            size: length of d square
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
