@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
     Module containing functions to search for solutions to N-queens problem.
@@ -49,11 +48,11 @@ def recur_bt(matrix, row, col, n):
     if row:
         i = row
         for j in col:
-                if (not bot_right(matrix, i + 1, j + 1, n) or
+            if (not bot_right(matrix, i + 1, j + 1, n) or
                     not bot_left(matrix, i + 1, j - 1, n) or
                     not top_left(matrix, i - 1, j - 1, n) or
-                        not top_right(matrix, i - 1, j + 1, n)):
-                        continue
+                    not top_right(matrix, i - 1, j + 1, n)):
+                continue
                 matrix.append([i, j])
                 new_col = list(col)
                 new_col.remove(j)
@@ -153,6 +152,7 @@ def top_right(matrix, y, x, n):
             x += 1
     return True
 
+
 if __name__ == "__main__":
     from sys import argv
     if len(argv) is not 2:
@@ -160,7 +160,7 @@ if __name__ == "__main__":
         exit(1)
     try:
         n = int(argv[1])
-    except:
+    else:
         print("N must be a number")
         exit(1)
     if n < 4:
