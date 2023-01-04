@@ -9,7 +9,7 @@ class LockedClass:
             raise AttributeError("'LockedClass' object has no attribute '" +
                                  name + "'")
 
-    def __getattribute__(self, name):
+    def __getattr__(self, name):
         if name == "__dict__":
             raise AttributeError("'LockedClass' object has no attribute '" +
                                  name + "'")
