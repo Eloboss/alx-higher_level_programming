@@ -4,7 +4,7 @@
 class LockedClass:
     """To detect errors"""
     def __setattr__(self, name, value):
-        """locked class with attributes"""
+        """loced class with attributes"""
         if name != "first_name":
             raise AttributeError("'LockedClass' object has no attribute '" +
                                  name + "'")
