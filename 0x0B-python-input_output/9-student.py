@@ -17,4 +17,3 @@ class Student:
     def to_json(self):
         """ductionary like of self"""
         return self.__dict__
-
