@@ -62,7 +62,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """ Returns a list of instances """
-                filename = "{}.json".format(cls.__name__)
+        filename = "{}.json".format(cls.__name__)
         instance_list = []
         try:
             with open(filename, 'r') as f:
