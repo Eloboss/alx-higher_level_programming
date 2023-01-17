@@ -20,22 +20,26 @@ class Base:
     def to_json_string(list_dictionaries):
         """ Returns the JSON string representation of list_dictionaries """
         new = []
-        if list_dictionaries is None:
+        if list_dictionaries is None or bool(list_dictionaries) is False:
             return (new)
         else:
             return (json.dumps(list_dictionaries))
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ Writes the JSON string representation of list_objs to a files """
-        file = "{}.json".format(cls.__name__)
-        new = []
-        with open(file, 'w') as f:
+        """ Writes the JSON string representation of list_objs to a fils """
+        filename = "{}.json".format(cls.__name__)
+        list_dictionaries = []
+        if list_objs is not None:
+            for obj in list_objs:
+                dictionary = obj.to_dictionary()
+                list_dictionaries.append(dictionary)
+            json_string = Base.to_json_string(list_dictionaries)
+        with open(filename, 'w') as f:
             if list_objs is None:
                 f.write("[]")
-            for obj in list_objs:
-                new.append(obj.to_dictionary())
-            f.write(cls.to_json_string(new))
+            else:
+                f.write(json_string)
 
     @staticmethod
     def from_json_string(json_string):
@@ -58,12 +62,15 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """ Returns a list of instances """
-        new_l = []
-        rtn_empty = []
-        file = "{}.json".format(cls.__name__)
-        if path.isfile(file):
-            with open(file, 'r') as f:
-                new_l = cls.from_json_string(f.read())
-            for val in new_l:
-                rtn_empty.append(cls.create(**val))
-            return (rtn_empty)
+                filename = "{}.json".format(cls.__name__)
+        instance_list = []
+        try:
+            with open(filename, 'r') as f:
+                json_string = f.read()
+                dictionary_list = cls.from_json_string(json_string)
+                for item in dictionary_list:
+                    instance = cls.create(**item)
+                    instance_list.append(instance)
+        except FileNotFoundError:
+            return instance_list
+        return instance_list
