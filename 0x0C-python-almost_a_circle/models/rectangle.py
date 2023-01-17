@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ New class Rectangle """
 from models.base import Base
