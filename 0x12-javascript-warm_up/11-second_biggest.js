@@ -21,3 +21,4 @@ for (let i = 4; i < process.argv.length; i++) {
   }
 }
 console.log(second);
+}
