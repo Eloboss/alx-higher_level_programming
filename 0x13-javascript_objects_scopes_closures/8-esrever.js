@@ -1,9 +1,9 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  const array = [];
+  const arrayA = [];
   let elo = 0;
   for (let boss = list.length - 1; boss >= 0; boss--, elo++) {
-    array[elo] = list[boss];
+    arrayA[elo] = list[boss];
   }
-  return array[elo];
+  return arrayA[elo];
 };
