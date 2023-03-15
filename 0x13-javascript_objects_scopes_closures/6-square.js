@@ -5,7 +5,7 @@ module.exports = class Square extends EloBoss {
     if (c === undefined) {
       c = 'X';
       for (let i = 0; i < this.height; i++) {
-        console.log('c'.repeat(this.width));
+        console.log(c.repeat(this.width));
       }
     }
   }
