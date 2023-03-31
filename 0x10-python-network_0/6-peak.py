@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Method to find peak in a number """
+
 
 def find_peak(list_of_integers):
     """ Function to find highest numbers """
