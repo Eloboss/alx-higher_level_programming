@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""Script takes in url and email and posat a request to url"""
+"""
+Script takes in url and email and posat a request to url
+"""
 
-
-import urlib.request
-import sys
-import urllib.parse
 
 if __name__ == "__main__":
+    import urlib.request
+    import sys
+    import urllib.parse
     value = {'email': sys.argv[2]}
     data = urllib.parse.urlencode(value)
     data = data.encode('ascii')
