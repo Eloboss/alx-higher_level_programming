@@ -3,19 +3,22 @@
 Script that prints the latest 10 commits by taking in the username and password
 """
 
-import requests
-from requests.auth import HTTPBasicAuth
-from sys import argv
+
+if __name__ == "__main__":
+    import requests
+    from requests.auth import HTTPBasicAuth
+    from sys import argv
+
 
 def print_commits(i, commit_list):
-        """
-        List the commits, less than 10 commits
-        """
-        sha = commit_list[i].get('sha')
-        commit = commit_list[i].get('commit')
-        author = commit.get('author')
-        name = author.get('name')
-        print('{}: {}'.format(sha, name))
+    """
+    List the commits, less than 10 commits
+    """
+    sha = commit_list[i].get('sha')
+    commit = commit_list[i].get('commit')
+    author = commit.get('author')
+    name = author.get('name')
+    print('{}: {}'.format(sha, name))
 
     repo = argv[1]
     owner = argv[2]
