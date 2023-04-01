@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Script that requires the code"""
+"""
+Script that requires the code
+"""
 
 
-if __name == "__main__":
+if __name__ == "__main__":
     import requests
     
     elo = requests.get('https://intranet.hbtn.io/status')
