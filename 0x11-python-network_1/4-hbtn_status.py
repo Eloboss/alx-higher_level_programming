@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that requires the code using request package"""
+Script that requires the code using request packages
+"""
 
 
 if __name__ == "__main__":
