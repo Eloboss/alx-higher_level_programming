@@ -17,6 +17,6 @@ if __name__ == "__main__":
         if e == {}:
             print('No result')
         else:
-            print("{[]} {}".format(e['id'], e['name']))
+            print("{[]} {}".format(e.get('id'), e.get('name')))
     except:
         print('Not a valid JSON')
