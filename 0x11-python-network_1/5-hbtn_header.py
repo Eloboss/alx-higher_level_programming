@@ -2,10 +2,10 @@
 """Script that gets the header Variable"""
 
 
-import requests
-import sys
-
 if __name == "__main__":
+    import requests
+    import sys
+
     elo = requests.get(sys.argv[1])
     boss = elo.headers.get('X-Request-Id')
     print(boss)
