@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Script that takes url and post data using only request package"""
 
-import requests
-import sys
-
 if __name__ == "__main__":
-    elo = requests.post(sys.argv[1]), data={'email': sys.argv[2]})
+    import requests
+    import sys
+
+    values = {'email': sys.argv[2]}
+    elo = requests.post(sys.argv[1], data=values)
     print(elo.text)
