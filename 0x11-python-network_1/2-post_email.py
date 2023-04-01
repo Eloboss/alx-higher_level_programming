@@ -5,9 +5,10 @@ Script takes in url and email and posat a request to url
 
 
 if __name__ == "__main__":
-    import urlib.request
+    import urllib.request
     import sys
     import urllib.parse
+
     value = {'email': sys.argv[2]}
     data = urllib.parse.urlencode(value)
     data = data.encode('ascii')
