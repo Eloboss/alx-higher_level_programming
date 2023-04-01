@@ -4,11 +4,10 @@ Script that takes url and prints error if exists
 """
 
 
-import urllib.request
-import urllib.error
-import sys
-
 if __name__ == "__main__":
+    import urllib.request
+    import urllib.error
+    import sys
     try:
         with urllib.request.urlopen(sys.argv[1]) as elo:
             print(elo.read().decode("utf-8", "decode"))
