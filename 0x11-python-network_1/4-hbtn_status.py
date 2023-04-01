@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that requires the code using request packages
+Script that requires the codes using request packages
 """
 
 
