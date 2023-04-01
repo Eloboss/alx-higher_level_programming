@@ -10,6 +10,6 @@ if __name__ == "__main__":
     boss = requests.get('https://api.github.com/user', auth=elo)
     try:
         e = boss.json()
-        print(e['id'])
+        print(e.get('id'))
     except ValueError:
         print('None')
