@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""sends a request to the URL and displays a variable in the head"""
+"""
+sends a request to the URL and displays a variable in the head X-Request-id
+"""
 
 
-if __name == "__main__":
+if __name__ == "__main__":
     import urllib.request
     import sys
 
