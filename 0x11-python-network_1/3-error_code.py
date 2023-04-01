@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that takes url and prints error if exists tiere is error
+Script that takes url and prints error if exists tthere is an error
 """
 
 
