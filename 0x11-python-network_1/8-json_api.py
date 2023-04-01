@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script that takes in a letter and sends a POST request to url"""
+""" script that takes in a letter and sends a POST requests to url"""
 
 
 if __name__ == "__main__":
